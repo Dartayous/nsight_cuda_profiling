@@ -130,7 +130,7 @@ ENV/
 env/
 .venv/
 
-# 📦 Python Egg Packaging Metadata
+### 📦 Python Egg Packaging Metadata
 vector_add.egg-info/
 
 ---
