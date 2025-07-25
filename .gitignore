@@ -1,0 +1,53 @@
+# ========================================
+# 🐍 Python and Virtual Environment Cleanup
+# These patterns exclude Python cache files and environments
+__pycache__/               # Compiled Python cache files
+*.py[cod]                  # Python bytecode files
+*.egg                      # Python distribution archive
+*.egg-info/               # Metadata for Python packages
+dist/                      # Distribution folder for built packages
+build/                     # Build artifacts folder
+*.spec                     # PyInstaller spec files
+
+# ========================================
+# 🧪 Jupyter Notebook Artifacts
+# Avoid checkpoint clutter in version control
+.ipynb_checkpoints/
+*-checkpoint.*            # Backup versions from Jupyter
+
+# ========================================
+# 🖼️ Optional Media (Keep if using externally hosted assets)
+# Uncomment if large assets shouldn't be tracked
+# *.mp4                    # Video files
+# *.png                    # Image files
+# *.jpg                    # Image files
+
+# ========================================
+# 🧰 Nsight Compute/CUDA Profiler Files
+# These are large profiler outputs
+*.ncu-rep                 # Nsight Compute report files
+*.ncu-proj                # Nsight Compute project files
+
+# ========================================
+# ⚙️ Windows-Specific and IDE/Editor Junk
+*.exe                     # Executable binaries
+*.dll                     # Windows dynamic libs
+*.obj                     # Object files from compilation
+*.log                     # Log files
+*.tmp                     # Temp files from crashes or builds
+.vscode/                  # VS Code workspace settings (optional)
+*.DS_Store                # macOS metadata files
+
+# ========================================
+# 🧳 Python Virtual Environments (Global or Local)
+# Ignore shared virtual environment even if it's outside this folder
+Venv/
+venv/
+ENV/
+env/
+.venv/
+
+# ========================================
+# 📦 Build Metadata for Python Egg Packaging
+vector_add.egg-info/      # Internal metadata used by setuptools
+
