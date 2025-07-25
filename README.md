@@ -2,14 +2,14 @@
 
 ![Badge](https://img.shields.io/badge/Reviewed_by-Nsight_Compute-00FFFF?style=flat-square&logo=nvidia)
 
-### 👨‍💻 Author: Dartayous Hunter 
+## 👨‍💻 Author: Dartayous Hunter 
 *AI Engineer & Visual Effects Technologist*  
 *Blending low-level performance with high-level visual storytelling*
 
 “I profiled my own PyTorch CUDA extension in Nsight Compute, resolved permission-level access to counters, mapped register usage and warp efficiency, and benchmarked my kernel against native ops — then made it faster.”
 ---
 
-## 🎯 Overview
+### 🎯 Overview
 
 This project benchmarks and profiles a custom CUDA kernel wrapped as a PyTorch extension, using NVIDIA Nsight Compute for full GPU telemetry access. From kernel build to warp execution analysis, this pipeline unlocks performance visibility and measurable speedups — proving that GPU engineering is as cinematic as it is scientific.
 
@@ -17,7 +17,7 @@ This project benchmarks and profiles a custom CUDA kernel wrapped as a PyTorch e
 
 ---
 
-## 🧩 Project Structure
+### 🧩 Project Structure
 
 ```bash
 nsight_cuda_profiling/
@@ -33,7 +33,7 @@ nsight_cuda_profiling/
 └── README.md                  # You’re reading it!
 ```
 
-## ⚙️ Tech Stack
+### ⚙️ Tech Stack
 - Python 3.11 (torch311 virtual env)
 
 - PyTorch (CUDA 12.1 enabled)
@@ -49,7 +49,7 @@ nsight_cuda_profiling/
 - Windows OS
 
 
-## 📈 Performance Highlights
+### 📈 Performance Highlights
 - ✅ Custom kernel: vector_add(a, b, out, size)
 
 - 🔬 Validated with torch.allclose() in Python
@@ -60,7 +60,7 @@ nsight_cuda_profiling/
 
 
 
-## 🧠 Steps to Reproduce
+# 🧠 Steps to Reproduce
 1.) Compile extension:
 ```bash
 python setup.py install
@@ -93,11 +93,11 @@ reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global\PerfCounterAccess" /v Enable /t
 
 ---
 
-## 🧼 Repository Hygiene
+### 🧼 Repository Hygiene
 
 This project includes a `.gitignore` configured for Python, CUDA profiling, and modular virtual environments to keep the repository clean and focused:
 
-# 🐍 Python Environment and Build Artifacts
+### 🐍 Python Environment and Build Artifacts
 __pycache__/
 *.py[cod]
 *.egg
@@ -106,15 +106,15 @@ dist/
 build/
 *.spec
 
-# 📓 Jupyter Notebook Checkpoints
+### 📓 Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
 *-checkpoint.*
 
-# 📈 Nsight Compute/CUDA Profiler Files
+### 📈 Nsight Compute/CUDA Profiler Files
 *.ncu-rep
 *.ncu-proj
 
-# ⚙️ System and IDE Artifacts
+### ⚙️ System and IDE Artifacts
 *.exe
 *.dll
 *.obj
@@ -123,7 +123,7 @@ build/
 .vscode/
 *.DS_Store
 
-# 🧳 Virtual Environments (Global or Local)
+### 🧳 Virtual Environments (Global or Local)
 Venv/
 venv/
 ENV/
@@ -135,7 +135,7 @@ vector_add.egg-info/
 
 ---
 
-## GitHub Push Workflow
+### GitHub Push Workflow
 ```bash
 # Initialize Git if you haven’t yet
 git init
@@ -154,7 +154,7 @@ git push -u origin main
 
 
 ```
-## 📊 Visualization Assets
+### 📊 Visualization Assets
 See infographic_guide.md for a breakdown of the visual storyboard. Includes: Build → Benchmark → Launch → Unlock → Profile
 
 ## ✨ About the Author
