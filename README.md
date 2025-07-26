@@ -59,8 +59,27 @@ nsight_cuda_profiling/
 - 🧠 Nsight analysis: warp execution, register pressure, memory stalls
 
 
+### 💡 Features
+- Triton-compatible model repository with ONNX and TensorRT assets
+- Custom CUDA kernel (`vector_add`) integrated with PyTorch
+- Modular FastAPI client for asynchronous inference
+- Nsight Compute profiling with annotated warp efficiency
+- CI workflow + pull request templates
+- Visual assets for documentation and branding
+
 
 # 🧠 Steps to Reproduce
+
+### 🔧 Stack
+- Python · CUDA · PyTorch · FastAPI · Triton · TensorRT · Nsight Compute
+  
+
+## 🚀 Getting Started
+Clone repo, run `docker-compose`, and trigger `perf_analyzer` from SDK container.
+
+
+### 🧠 Steps to Reproduce
+>>>>>>> ae36a72 (feat: finalize README, .gitignore, and infographic guide updates)
 1.) Compile extension:
 ```bash
 python setup.py install
@@ -90,6 +109,9 @@ reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global\PerfCounterAccess" /v Enable /t
 
 5.) Reboot and relaunch Nsight.
 
+
+## 📈 Performance Benchmarking
+Use `perf_analyzer` from the Triton SDK container to gather latency, throughput, and concurrency metrics. See `infographic_guide.md` for visualized profiling results.
 
 ---
 
@@ -158,4 +180,4 @@ git push -u origin main
 See infographic_guide.md for a breakdown of the visual storyboard. Includes: Build → Benchmark → Launch → Unlock → Profile
 
 ## ✨ About the Author
-Dartayous is a seasoned VFX compositing artist turned AI engineer with a passion for GPU performance and storytelling. This repository reflects a crossover journey: where cinematic precision meets CUDA kernel mastery.
+Dartayous is a seasoned VFX compositing artist turned AI engineer with a passion for GPU performance and storytelling. This repository reflects a crossover journey: where cinematic precision meets CUDA kernel mastery. This project blends cinematic precision with technical depth.

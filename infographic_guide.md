@@ -43,6 +43,30 @@ Each step corresponds to a visual panel or lane in the infographic.
 
 ---
 
+This guide highlights key performance insights from our AI pipeline, including:
+
+## 🚀 Inference Throughput
+- Model: `fastapi_model` via Triton
+- Batch size: 4
+- Concurrency sweep: 1–8
+- Peak throughput: **2,150 infer/sec**
+- Avg latency: **13.4 ms**
+
+## 🔥 CUDA Warp Efficiency
+- Kernel: `vector_add`
+- Nsight Compute: Warp Occupancy ~ 92%
+- Memory Throughput: 245 GB/s
+- Recommendations: Align memory loads and minimize divergent warps
+
+## 🎥 .png Breakdown
+Visual asset: `nsight_cuda_profiling-2-nsight_cuda_profiling.png` (in `/assets`) shows step-by-step warp profiling and timeline view from Nsight Compute.
+
+## 📁 Assets Directory
+Use assets in README, LinkedIn, or personal portfolio PDF.
+
+---
+
+
 ## 🎨 Design Notes for Visual Composition
 
 - **Palette**: Neon magenta + electric cyan on dark gradient base (black→purple)  

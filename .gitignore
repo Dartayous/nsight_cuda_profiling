@@ -9,6 +9,8 @@ dist/                      # Distribution folder for built packages
 build/                     # Build artifacts folder
 *.spec                     # PyInstaller spec files
 
+# VS Code
+
 # ========================================
 # 🧪 Jupyter Notebook Artifacts
 # Avoid checkpoint clutter in version control
@@ -46,6 +48,18 @@ venv/
 ENV/
 env/
 .venv/
+
+# ========================================
+# Triton
+perf_results/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CUDA
+*.ptx
 
 # ========================================
 # 📦 Build Metadata for Python Egg Packaging
