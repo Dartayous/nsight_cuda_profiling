@@ -13,7 +13,6 @@
 
 This project benchmarks and profiles a custom CUDA kernel wrapped as a PyTorch extension, using NVIDIA Nsight Compute for full GPU telemetry access. From kernel build to warp execution analysis, this pipeline unlocks performance visibility and measurable speedups — proving that GPU engineering is as cinematic as it is scientific.
 
-> 💬 “I profiled my own PyTorch CUDA extension in Nsight Compute, resolved permission-level access to counters, mapped register usage and warp efficiency, and benchmarked my kernel against native ops — then made it faster.”
 
 ---
 
