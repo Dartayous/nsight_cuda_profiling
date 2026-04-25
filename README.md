@@ -156,5 +156,5 @@ git push -u origin main
 ###  Visualization Assets
 See infographic_guide.md for a breakdown of the visual storyboard. Includes: Build → Benchmark → Launch → Unlock → Profile
 
-## ✨ About the Author
+##  About the Author
 Dartayous is a seasoned VFX compositing artist turned AI engineer with a passion for GPU performance and storytelling. This repository reflects a crossover journey: where cinematic precision meets CUDA kernel mastery.
